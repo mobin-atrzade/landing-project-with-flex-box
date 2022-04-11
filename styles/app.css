@@ -318,11 +318,14 @@ body {
 .works {
   text-align: center;
 }
-.works__text {
+.works__text,
+.portfolio__text {
   color: #6c7890;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
-.works__title {
+.works__title,
+.portfolio__title {
   color: #081d43;
   margin-top: 0.8rem;
   font-family: "TTNorms Medium";
@@ -365,9 +368,13 @@ body {
 .person-comments__text {
   font-family: "TTNorms Light";
 }
+.comments-container {
+  max-width: 65rem;
+  margin: 3.5rem auto 0 auto;
+}
 .comments {
-  margin: 3.5rem 0;
   display: flex;
+  justify-content: space-between;
 }
 .comment {
   background-color: #fff;
@@ -376,7 +383,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 17rem;
+  min-height: 17rem;
+  flex-basis: 20rem;
 }
 .comment__content {
   text-align: left;
@@ -401,19 +409,38 @@ body {
   margin: 0 0 0 0.5rem;
 }
 
+.companies {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+}
+.companies__img {
+  display: block;
+  margin: 1rem;
+}
 
+/* portfolio */
 
-
-
-
-
-
-
-
-
-
-
-
+.portfolio {
+  text-align: center;
+  padding: 2rem 0;
+}
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.portfolio__item {
+  flex-basis: 23rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.portfolio__img {
+  width: 100%;
+}
 
 /* Project Responsive */
 
